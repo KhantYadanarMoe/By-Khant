@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>By Khant</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="m-0 p-0 font-default box-border">
+    <nav class="flex justify-between px-8 py-7">
+      <h1 class="font-logo text-3xl">By Khant</h1>
+      <div class="relative w-[300px]">
+        <input
+          type="text"
+          class="py-2 pl-10 pr-2 border border-gray-400 text-gray-300 w-full rounded-md shadow focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500"
+          placeholder="Search..."
+        />
+        <div class="absolute top-3 left-0 flex items-center pl-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-[18px] text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <ul class="flex justify-center items-center">
+          <a href="" class="decoration-none text-black px-3">
+            <li class="list-none">Home</li>
+          </a>
+          <a href="" class="decoration-none text-black px-3">
+            <li class="list-none">Blogs</li>
+          </a>
+          <div class="relative inline-block text-left group">
+            <!-- Hidden checkbox to manage toggle state (for click) -->
+            <input type="checkbox" id="dropdownToggle" class="peer hidden" />
+
+            <!-- Dropdown button (for both hover and click) -->
+            <label
+              for="dropdownToggle"
+              class="inline-flex px-3 w-full justify-center gap-x-1.5 text-black cursor-pointer"
+            >
+              Categories
+            </label>
+
+            <!-- Dropdown menu that appears on hover and click -->
+            <div
+              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none opacity-0 hidden group-hover:opacity-100 group-hover:block peer-checked:opacity-100 peer-checked:block transition-all duration-300 ease-in-out"
+            >
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  >Front-End</a
+                >
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  >Back-End</a
+                >
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  >Full-Stack</a
+                >
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  >Frameworks & Libraries</a
+                >
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
+                  >Tools</a
+                >
+              </div>
+            </div>
+          </div>
+        </ul>
+        <button
+          class="mx-3 px-3 border-l-2 border-crimson text-crimson hover:text-coral hover:border-coral"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <script src="https://unpkg.com/@heroicons/vue@2.0.13/outline"></script>
+  </body>
+</html>
