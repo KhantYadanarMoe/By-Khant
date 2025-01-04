@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="m-0 p-0 font-default box-border">
-    <nav class="flex justify-between px-8 py-7">
-      <h1 class="font-logo text-3xl">By Khant</h1>
-      <div class="relative w-[300px]">
+    <nav
+      class="flex justify-between items-center px-5 py-4 lg:px-8 lg:py-7 md:px-8 md:py-7"
+    >
+      <h1 class="font-logo text-xl md:text-3xl lg:text-3xl mb-0">By Khant</h1>
+      <div class="relative w-[160px] md:w-[240px] lg:w-[300px]">
         <input
           type="text"
-          class="py-2 pl-10 pr-2 border border-gray-400 text-gray-300 w-full rounded-md shadow focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500"
+          class="py-1 lg:py-2 md:py-2 pl-10 pr-2 border border-gray-400 text-gray-300 w-full rounded-md shadow focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500"
           placeholder="Search..."
         />
-        <div class="absolute top-3 left-0 flex items-center pl-3">
+        <div
+          class="absolute top-2 lg:top-3 md:top-3 left-0 flex items-center pl-3"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -32,12 +36,96 @@
           </svg>
         </div>
       </div>
-      <div class="flex justify-center items-center">
-        <ul class="flex justify-center items-center">
-          <a href="" class="decoration-none text-black px-3">
+      <div class="flex md:hidden lg:hidden gap-3">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+            />
+          </svg>
+        </div>
+        <div id="menuToggle" class="cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- small screen -->
+      <div
+        id="smallMenu"
+        class="fixed top-0 right-0 w-full h-screen bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          id="closeMenu"
+          class="fixed top-0 right-0 p-5 text-xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <ul class="flex flex-col items-center h-screen justify-center gap-10">
+          <a href="#" class="decoration-none text-black">
             <li class="list-none">Home</li>
           </a>
-          <a href="" class="decoration-none text-black px-3">
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Blogs</li>
+          </a>
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Front-end</li>
+          </a>
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Back-end</li>
+          </a>
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Full-stack</li>
+          </a>
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Frameworks & Libraries</li>
+          </a>
+          <a href="#" class="decoration-none text-black">
+            <li class="list-none">Tools</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="hidden md:flex lg:flex justify-center items-center">
+        <ul class="hidden md:flex lg:flex justify-center items-center gap-5">
+          <a href="" class="decoration-none text-black">
+            <li class="list-none">Home</li>
+          </a>
+          <a href="" class="decoration-none text-black">
             <li class="list-none">Blogs</li>
           </a>
           <div class="relative inline-block text-left group">
@@ -47,7 +135,7 @@
             <!-- Dropdown button (for both hover and click) -->
             <label
               for="dropdownToggle"
-              class="inline-flex px-3 w-full justify-center gap-x-1.5 text-black cursor-pointer"
+              class="inline-flex w-full justify-center gap-x-1.5 text-black cursor-pointer"
             >
               Categories
             </label>
@@ -85,5 +173,22 @@
     </nav>
 
     <script src="https://unpkg.com/@heroicons/vue@2.0.13/outline"></script>
+    <script>
+      const menuToggle = document.getElementById("menuToggle"); // Your toggle button
+      const smallMenu = document.getElementById("smallMenu"); // Hidden menu
+      const closeMenu = document.getElementById("closeMenu"); // Close button (if needed)
+
+      // Open menu
+      menuToggle.addEventListener("click", () => {
+        smallMenu.classList.remove("translate-x-full");
+        smallMenu.classList.add("translate-x-0");
+      });
+
+      // Close menu
+      closeMenu.addEventListener("click", () => {
+        smallMenu.classList.remove("translate-x-0");
+        smallMenu.classList.add("translate-x-full");
+      });
+    </script>
   </body>
 </html>
