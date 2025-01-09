@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body class="m-0 p-0 font-default box-border">
+    <!-- navigation -->
     <nav
       class="flex justify-between items-center px-5 py-4 lg:px-8 lg:py-7 md:px-8 md:py-7"
     >
-      <h1 class="font-logo text-xl md:text-3xl lg:text-3xl mb-0">By Khant</h1>
+      <h1 class="font-logo text-xl md:text-3xl mb-0">By Khant</h1>
       <div class="relative w-[160px] md:w-[240px] lg:w-[300px]">
         <input
           type="text"
@@ -36,7 +37,7 @@
           </svg>
         </div>
       </div>
-      <div class="flex md:hidden lg:hidden gap-3">
+      <div class="flex lg:hidden gap-3">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +45,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-5"
+            class="size-5 md:size-8"
           >
             <path
               stroke-linecap="round"
@@ -60,7 +61,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-5"
+            class="size-5 md:size-8"
           >
             <path
               stroke-linecap="round"
@@ -71,7 +72,6 @@
         </div>
       </div>
 
-      <!-- small screen -->
       <div
         id="smallMenu"
         class="fixed top-0 right-0 w-full h-screen bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
@@ -97,72 +97,31 @@
         </div>
         <ul class="flex flex-col items-center h-screen justify-center gap-10">
           <a href="#" class="decoration-none text-black">
-            <li class="list-none">Home</li>
+            <li class="list-none text-xl">Front-end</li>
           </a>
           <a href="#" class="decoration-none text-black">
-            <li class="list-none">Blogs</li>
+            <li class="list-none text-xl">Back-end</li>
           </a>
           <a href="#" class="decoration-none text-black">
-            <li class="list-none">Front-end</li>
+            <li class="list-none text-xl">Full-stack</li>
           </a>
           <a href="#" class="decoration-none text-black">
-            <li class="list-none">Back-end</li>
+            <li class="list-none text-xl">Frameworks & Libraries</li>
           </a>
           <a href="#" class="decoration-none text-black">
-            <li class="list-none">Full-stack</li>
-          </a>
-          <a href="#" class="decoration-none text-black">
-            <li class="list-none">Frameworks & Libraries</li>
-          </a>
-          <a href="#" class="decoration-none text-black">
-            <li class="list-none">Tools</li>
+            <li class="list-none text-xl">Tools</li>
           </a>
         </ul>
       </div>
 
-      <div class="hidden md:flex lg:flex justify-center items-center">
-        <ul class="hidden md:flex lg:flex justify-center items-center gap-5">
-          <a href="" class="decoration-none text-black">
-            <li class="list-none">Home</li>
-          </a>
-          <a href="" class="decoration-none text-black">
-            <li class="list-none">Blogs</li>
-          </a>
-          <div class="relative inline-block text-left group">
-            <!-- Hidden checkbox to manage toggle state (for click) -->
-            <input type="checkbox" id="dropdownToggle" class="peer hidden" />
-
-            <!-- Dropdown button (for both hover and click) -->
-            <label
-              for="dropdownToggle"
-              class="inline-flex w-full justify-center gap-x-1.5 text-black cursor-pointer"
-            >
-              Categories
-            </label>
-
-            <!-- Dropdown menu that appears on hover and click -->
-            <div
-              class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none opacity-0 hidden group-hover:opacity-100 group-hover:block peer-checked:opacity-100 peer-checked:block transition-all duration-300 ease-in-out"
-            >
-              <div class="py-1">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
-                  >Front-End</a
-                >
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
-                  >Back-End</a
-                >
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
-                  >Full-Stack</a
-                >
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
-                  >Frameworks & Libraries</a
-                >
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700"
-                  >Tools</a
-                >
-              </div>
-            </div>
-          </div>
+      <div class="hidden lg:flex justify-center items-center">
+        <ul class="hidden lg:flex justify-center items-center gap-5">
+          <a href="#" class="decoration-none text-black">Front-End</a>
+          <a href="#" class="decoration-none text-black">Back-End</a>
+          <a href="#" class="decoration-none text-black"
+            >Frameworks & Libraries</a
+          >
+          <a href="#" class="decoration-none text-black">Tools</a>
         </ul>
         <button
           class="mx-3 px-3 border-l-2 border-crimson text-crimson hover:text-coral hover:border-coral"
@@ -171,6 +130,20 @@
         </button>
       </div>
     </nav>
+
+    <!-- hero-section -->
+    <div>
+      <div class="px-8 py-16">
+        <h1 class="text-3xl :text-6xl pb-2">
+          Build Smarter. <br />
+          Code Better.
+        </h1>
+        <p class="text-sm text-gray-700 py-3">
+          Your go-to hub for coding tips, tools, and sharing knowledge.
+        </p>
+      </div>
+      <hr />
+    </div>
 
     <script src="https://unpkg.com/@heroicons/vue@2.0.13/outline"></script>
     <script>
