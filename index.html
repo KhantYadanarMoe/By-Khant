@@ -146,39 +146,41 @@
     </div>
 
     <!-- recent posts section -->
-    <div class="grid lg:grid-cols-2 gap-9 px-8 py-8 m-auto w-[600px] lg:w-full">
-      <div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-9 px-5 py-8">
+      <div class="mb-5 md:mb-0">
         <h3 class="text-xl mb-4">Newest Post</h3>
         <div>
           <img
             src="./src/img/mostly-read.jpg"
             alt=""
-            class="object-cover w-full h-[270px] rounded-md"
+            class="object-cover w-full h-[180px] lg:h-[270px] rounded-md"
           />
-          <h2 class="text-2xl mt-3 mb-1">How to become a website developer</h2>
+          <h2 class="text-xl lg:text-2xl mt-3 mb-1">
+            How to become a website developer
+          </h2>
           <div class="flex py-2 gap-1">
             <a
               href=""
-              class="decoration-none text-gray-900 text-sm px-3 py-1 border border-gray-900 rounded-lg"
+              class="decoration-none text-gray-900 text-[0.6rem] md:text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
               >Frontend</a
             >
             <a
               href=""
-              class="decoration-none text-gray-900 text-sm px-3 py-1 border border-gray-900 rounded-lg"
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
               >Backend</a
             >
             <a
               href=""
-              class="decoration-none text-gray-900 text-sm px-3 py-1 border border-gray-900 rounded-lg"
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
               >Frameworks & Libraries</a
             >
             <a
               href=""
-              class="decoration-none text-gray-900 text-sm px-3 py-1 border border-gray-900 rounded-lg"
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
               >Tools</a
             >
           </div>
-          <p class="text-sm text-gray-800 py-2">
+          <p class="text-xs md:text-sm text-gray-800 py-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure
             quibusdam nesciunt sit assumenda sapiente autem consequuntur placeat
             earum et cupiditate aspernatur perferendis, amet maiores dolor
@@ -221,7 +223,7 @@
             </p>
           </div>
           <button
-            class="flex gap-1 items-center px-5 py-2 mt-3 bg-crimson hover:bg-red-700 text-white duration-300 rounded-md"
+            class="flex md:hidden lg:flex gap-1 items-center px-5 py-2 mt-3 md:mt-8 bg-crimson hover:bg-red-700 text-white duration-300 rounded-md"
           >
             Read
             <svg
@@ -243,166 +245,18 @@
       </div>
       <div>
         <h3 class="text-xl mb-4">Recent Posts</h3>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-6 md:gap-4">
           <a href="" class="flex gap-3 items-center">
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="h-[120px] rounded-md"
+              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
             />
             <div>
-              <h2 class="text-xl mb-1">How to become a website developer</h2>
-              <p class="text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-                velit dicta!
-              </p>
-              <div class="flex items-center justify-between py-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins read
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[120px] rounded-md"
-            />
-            <div>
-              <h2 class="text-xl mb-1">How to become a website developer</h2>
-              <p class="text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem, repudiandae!
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins read
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[120px] rounded-md"
-            />
-            <div>
-              <h2 class="text-xl mb-1">How to become a website developer</h2>
-              <p class="text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis, molestiae?
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins read
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[120px] rounded-md"
-            />
-            <div>
-              <h2 class="text-xl mb-1">How to become a website developer</h2>
-              <p class="text-xs text-gray-800 py-1">
+              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
+                How to become a website developer
+              </h2>
+              <p class="hidden lg:block text-xs text-gray-800 py-1">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
                 suscipit magnam?
               </p>
@@ -422,7 +276,163 @@
                       d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                     />
                   </svg>
-                  2 mins read
+                  2 mins
+                </p>
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                  29.1.2025
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="flex gap-3 items-center">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
+            />
+            <div>
+              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
+                How to become a website developer
+              </h2>
+              <p class="hidden lg:block text-xs text-gray-800 py-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+                suscipit magnam?
+              </p>
+              <div class="flex items-center justify-between pt-2">
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  2 mins
+                </p>
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                  29.1.2025
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="flex gap-3 items-center">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
+            />
+            <div>
+              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
+                How to become a website developer
+              </h2>
+              <p class="hidden lg:block text-xs text-gray-800 py-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+                suscipit magnam?
+              </p>
+              <div class="flex items-center justify-between pt-2">
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  2 mins
+                </p>
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                  29.1.2025
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="" class="flex gap-3 items-center">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
+            />
+            <div>
+              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
+                How to become a website developer
+              </h2>
+              <p class="hidden lg:block text-xs text-gray-800 py-1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+                suscipit magnam?
+              </p>
+              <div class="flex items-center justify-between pt-2">
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  2 mins
                 </p>
                 <p class="flex gap-1 text-sm text-gray-600">
                   <svg
@@ -445,6 +455,507 @@
             </div>
           </a>
         </div>
+      </div>
+    </div>
+
+    <!-- featured posts section -->
+    <div class="px-5 py-8">
+      <h3 class="text-2xl mb-4">Featured Posts</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="mb-3 md:mb-2">
+          <a href="">
+            <img
+              src="./src/img/mostly-read.jpg"
+              alt=""
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+            />
+            <h2 class="text-xl lg:text-xl mt-3 mb-1">
+              How to become a website developer
+            </h2>
+            <div class="flex py-2 gap-1">
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Frontend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Backend</a
+              >
+              <a
+                href=""
+                class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                >Tools</a
+              >
+            </div>
+            <p class="text-xs text-gray-800 py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              maiores perferendis, quisquam beatae voluptatem cum veniam
+              quibusdam modi?
+            </p>
+            <div class="flex items-center justify-between pt-2">
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                2 mins read
+              </p>
+              <p class="flex gap-1 text-sm text-gray-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                  />
+                </svg>
+                29.1.2025
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-8 gap-1">
+        <a
+          href=""
+          class="inline-block px-1 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </a>
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >1</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >2</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >3</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >4</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >5</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >6</a
+        >
+        <a
+          href=""
+          class="inline-block px-3 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          >7</a
+        >
+        <a
+          href=""
+          class="inline-block px-1 py-1 text-crimson bg-white hover:bg-gray-200 duration-300 border border-crimson rounded-md"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </a>
       </div>
     </div>
 
