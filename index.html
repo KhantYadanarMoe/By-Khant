@@ -6,7 +6,7 @@
     <title>By Khant</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="m-0 p-0 font-default box-border">
+  <body class="m-0 p-0 font-default box-border container mx-auto">
     <!-- navigation -->
     <nav
       class="flex justify-between items-center px-5 py-4 lg:px-8 lg:py-7 md:px-8 md:py-7"
@@ -116,13 +116,34 @@
 
       <div class="hidden lg:flex justify-center items-center">
         <ul class="hidden lg:flex justify-center items-center gap-5">
-          <a href="#" class="decoration-none text-black">Front-End</a>
-          <a href="#" class="decoration-none text-black">Back-End</a>
-          <a href="#" class="decoration-none text-black"
-            >Frameworks & Libraries</a
-          >
-          <a href="#" class="decoration-none text-black">Tools</a>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Front-End </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Back-End </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black">
+              Frameworks & Libraries
+            </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Tools </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
         </ul>
+
         <button
           class="mx-3 px-3 border-l-2 border-crimson text-crimson hover:text-coral hover:border-coral"
         >
@@ -146,7 +167,9 @@
     </div>
 
     <!-- recent posts section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-9 px-5 py-8">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-9 px-5 py-8 container"
+    >
       <div class="mb-5 md:mb-0">
         <h3 class="text-xl mb-4">Newest Post</h3>
         <div>
@@ -957,6 +980,99 @@
           </svg>
         </a>
       </div>
+    </div>
+
+    <div>
+      <hr />
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 py-8 min-h-72"
+      >
+        <div>
+          <h1 class="font-logo text-3xl mb-0">By Khant</h1>
+          <p class="text-gray-600 mt-3 text-sm md:text-base">
+            Helping you through the art and science of website development.
+          </p>
+        </div>
+        <div class="mt-12 md:mt-0 lg:mt-0 lg:mx-auto">
+          <h2 class="text-xl md:text-2xl mb-3 md:mb-5">Contact Us</h2>
+          <p
+            class="flex items-center gap-1 text-gray-800 text-xs md:text-sm mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+
+            khantyadnarmoe18@gmail.com
+          </p>
+          <p
+            class="flex items-center gap-1 text-gray-800 text-xs md:text-sm mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+
+            +959 885 959 170
+          </p>
+        </div>
+        <div class="mt-12 md:mt-16 lg:mt-0 lg:mx-auto">
+          <h2 class="text-xl md:text-2xl mb-3 md:mb-5">Follow us on social</h2>
+          <p class="text-gray-600 text-sm">
+            Track our steps not to miss our contents.
+          </p>
+          <div class="flex gap-3 mt-3">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                /></svg
+            ></a>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="24"
+                height="24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="text-gray-600 px-6 py-4">
+        2025 &copy; By-Khant. All right reserve to Khart.
+      </p>
     </div>
 
     <script src="https://unpkg.com/@heroicons/vue@2.0.13/outline"></script>
