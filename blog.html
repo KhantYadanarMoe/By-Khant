@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>By Khant</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <style>
+      @media (min-width: 540px) and (max-width: 760px) {
+        .custom-width {
+          width: 450px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="m-0 p-0 font-default box-border custom-width mx-auto">
+    <nav
+      class="flex justify-between items-center px-5 py-4 lg:px-8 lg:py-7 md:px-8 md:py-7"
+    >
+      <h1 class="font-logo text-xl md:text-3xl mb-0">By Khant</h1>
+      <div class="relative w-[160px] md:w-[240px] lg:w-[300px]">
+        <input
+          type="text"
+          class="py-1 lg:py-2 md:py-2 pl-10 pr-2 border border-gray-400 text-gray-300 w-full rounded-md shadow focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-500"
+          placeholder="Search..."
+        />
+        <div
+          class="absolute top-2 lg:top-3 md:top-3 left-0 flex items-center pl-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-[18px] text-gray-700"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="flex lg:hidden gap-3">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 md:size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+            />
+          </svg>
+        </div>
+        <div id="menuToggle" class="cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 md:size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div
+        id="smallMenu"
+        class="fixed top-0 right-0 w-full h-screen bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          id="closeMenu"
+          class="fixed top-0 right-0 p-5 text-xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <ul class="flex flex-col h-screen justify-center gap-10 ml-11">
+          <a href="#" class="decoration-none text-gray-800">
+            <li class="list-none text-xl">Front-end</li>
+          </a>
+          <a href="#" class="decoration-none text-gray-800">
+            <li class="list-none text-xl">Back-end</li>
+          </a>
+          <a href="#" class="decoration-none text-gray-800">
+            <li class="list-none text-xl">Full-stack</li>
+          </a>
+          <a href="#" class="decoration-none text-gray-800">
+            <li class="list-none text-xl">Frameworks & Libraries</li>
+          </a>
+          <a href="#" class="decoration-none text-gray-800">
+            <li class="list-none text-xl">Tools</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="hidden lg:flex justify-center items-center">
+        <ul class="hidden lg:flex justify-center items-center gap-5">
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Front-End </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Back-End </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black">
+              Frameworks & Libraries
+            </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+          <li class="relative group">
+            <a href="#" class="decoration-none text-black"> Tools </a>
+            <span
+              class="absolute left-0 bottom-0 h-0.5 w-full bg-crimson transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </li>
+        </ul>
+
+        <button
+          class="mx-3 px-3 border-l-2 border-crimson text-crimson hover:text-coral hover:border-coral"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <div class="my-5 mx-auto w-11/12 sm:w-4/5 lg:w-4/6">
+      <div>
+        <hr class="border-t-gray-400 mb-3" />
+        <div class="block md:flex items-center justify-between">
+          <div class="flex py-2 gap-1">
+            <a
+              href=""
+              class="decoration-none text-gray-900 text-[0.6rem] md:text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+              >Frontend</a
+            >
+            <a
+              href=""
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+              >Backend</a
+            >
+            <a
+              href=""
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+              >Frameworks & Libraries</a
+            >
+            <a
+              href=""
+              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+              >Tools</a
+            >
+          </div>
+          <p class="text-gray-600 flex justify-end mt-3 md:block md:mt-0">
+            29 Jan 2025
+          </p>
+        </div>
+        <h1 class="text-2xl mt-6 mb-3">How to become a website developer</h1>
+        <p class="text-gray-800 text-sm md:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          repellendus, possimus ducimus animi nesciunt vel natus voluptate fuga
+          aut atque cupiditate officia expedita sed. Animi, eveniet sunt.
+        </p>
+        <img
+          src="./src/img/mostly-read.jpg"
+          alt=""
+          class="w-full h-[230px] md:h-[300px] lg:h-[320px] object-cover my-4"
+        />
+        <p class="text-gray-800 text-sm md:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          aliquid beatae repellat qui laboriosam quisquam exercitationem sit
+          veritatis minima itaque! Minus inventore nulla debitis, non atque,
+          impedit unde ipsam itaque quidem sapiente voluptate amet eum magni aut
+          ut ad fugiat animi omnis dolores esse hic error nemo autem. Ipsum
+          laboriosam eius veritatis, ipsa rerum a culpa repudiandae cum
+          repellendus labore quam tempore debitis accusantium expedita. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid
+          beatae repellat qui laboriosam quisquam exercitationem sit veritatis
+          minima itaque! Minus inventore nulla debitis, non atque, impedit unde
+          ipsam itaque quidem sapiente voluptate amet eum magni aut ut ad fugiat
+          animi omnis dolores esse hic error nemo autem. Ipsum laboriosam eius
+          veritatis, ipsa rerum a culpa repudiandae cum repellendus labore quam
+          tempore debitis accusantium expedita.Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Repellendus aliquid beatae repellat qui
+          laboriosam quisquam exercitationem sit veritatis minima itaque! Minus
+          inventore nulla debitis, non atque, impedit unde ipsam itaque quidem
+          sapiente voluptate amet eum magni aut ut ad fugiat animi omnis dolores
+          esse hic error nemo autem. Ipsum laboriosam eius veritatis, ipsa rerum
+          a culpa repudiandae cum repellendus labore quam tempore debitis
+          accusantium expedita.
+        </p>
+        <div class="grid grid-cols-2 gap-1 md:gap-2 my-4">
+          <img
+            src="./src/img/mostly-read.jpg"
+            alt=""
+            class="w-full h-[160px] md:h-[250px] lg:h-[270px]"
+          />
+          <img
+            src="./src/img/mostly-read.jpg"
+            alt=""
+            class="w-full h-[160px] md:h-[250px] lg:h-[270px]"
+          />
+        </div>
+        <p class="text-gray-800 text-sm md:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          laboriosam quasi eaque illum quod cum velit vel beatae quae
+          accusantium, esse sapiente tenetur molestias quibusdam totam dolores
+          aliquid soluta neque veniam accusamus dolor. Eveniet officiis nam
+          obcaecati possimus ad recusandae tempora, numquam quo quod dolorem?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          laboriosam quasi eaque illum quod cum velit vel beatae quae
+          accusantium, esse sapiente tenetur molestias quibusdam totam dolores
+          aliquid soluta neque veniam accusamus dolor. Eveniet officiis nam
+          obcaecati possimus ad recusandae tempora, numquam quo quod dolorem?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          laboriosam quasi eaque illum quod cum velit vel beatae quae
+          accusantium, esse sapiente tenetur molestias quibusdam totam dolores
+          aliquid soluta neque veniam accusamus dolor. Eveniet officiis nam
+          obcaecati possimus ad recusandae tempora, numquam quo quod dolorem?
+        </p>
+        <hr class="border-t-gray-400 my-5" />
+      </div>
+      <div>
+        <h3 class="text-xl my-5">Blogs You Might Like</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="mb-3 md:mb-2">
+            <a href="">
+              <img
+                src="./src/img/mostly-read.jpg"
+                alt=""
+                class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+              />
+              <h2 class="text-xl lg:text-xl mt-3 mb-1">
+                How to become a website developer
+              </h2>
+              <div class="flex py-2 gap-1">
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Frontend</a
+                >
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Backend</a
+                >
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Tools</a
+                >
+              </div>
+              <p class="text-xs text-gray-800 py-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                maiores perferendis, quisquam beatae voluptatem cum veniam
+                quibusdam modi?
+              </p>
+              <div class="flex items-center justify-between pt-2">
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  2 mins read
+                </p>
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                  29.1.2025
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="mb-3 md:mb-2">
+            <a href="">
+              <img
+                src="./src/img/mostly-read.jpg"
+                alt=""
+                class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
+              />
+              <h2 class="text-xl lg:text-xl mt-3 mb-1">
+                How to become a website developer
+              </h2>
+              <div class="flex py-2 gap-1">
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Frontend</a
+                >
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Backend</a
+                >
+                <a
+                  href=""
+                  class="decoration-none text-gray-900 text-[0.6rem] md:text-xs px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
+                  >Tools</a
+                >
+              </div>
+              <p class="text-xs text-gray-800 py-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                maiores perferendis, quisquam beatae voluptatem cum veniam
+                quibusdam modi?
+              </p>
+              <div class="flex items-center justify-between pt-2">
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  2 mins read
+                </p>
+                <p class="flex gap-1 text-sm text-gray-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                    />
+                  </svg>
+                  29.1.2025
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <hr class="border-t-gray-400 mx-8" />
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 py-8 min-h-72"
+      >
+        <div>
+          <h1 class="font-logo text-3xl mb-0">By Khant</h1>
+          <p class="text-gray-600 mt-3 text-sm md:text-base">
+            Helping you through the art and science of website development.
+          </p>
+        </div>
+        <div class="mt-12 md:mt-0 lg:mt-0 lg:mx-auto">
+          <h2 class="text-xl md:text-2xl mb-3 md:mb-5">Contact Us</h2>
+          <p
+            class="flex items-center gap-1 text-gray-800 text-xs md:text-sm mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+
+            khantyadnarmoe18@gmail.com
+          </p>
+          <p
+            class="flex items-center gap-1 text-gray-800 text-xs md:text-sm mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+
+            +959 885 959 170
+          </p>
+        </div>
+        <div class="mt-12 md:mt-16 lg:mt-0 lg:mx-auto">
+          <h2 class="text-xl md:text-2xl mb-3 md:mb-5">Follow us on social</h2>
+          <p class="text-gray-600 text-sm">
+            Track our steps not to miss our contents.
+          </p>
+          <div class="flex gap-3 mt-3">
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                /></svg
+            ></a>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="24"
+                height="24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t-gray-400 mx-8" />
+      <p class="text-gray-600 px-6 py-4">
+        2025 &copy; By-Khant. All right reserve to Khart.
+      </p>
+    </div>
+
+    <script src="https://unpkg.com/@heroicons/vue@2.0.13/outline"></script>
+    <script>
+      const menuToggle = document.getElementById("menuToggle"); // Your toggle button
+      const smallMenu = document.getElementById("smallMenu"); // Hidden menu
+      const closeMenu = document.getElementById("closeMenu"); // Close button (if needed)
+
+      // Open menu
+      menuToggle.addEventListener("click", () => {
+        smallMenu.classList.remove("translate-x-full");
+        smallMenu.classList.add("translate-x-0");
+      });
+
+      // Close menu
+      closeMenu.addEventListener("click", () => {
+        smallMenu.classList.remove("translate-x-0");
+        smallMenu.classList.add("translate-x-full");
+      });
+    </script>
+  </body>
+</html>
