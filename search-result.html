@@ -8,14 +8,13 @@
     <style>
       @media (min-width: 540px) and (max-width: 760px) {
         .custom-width {
-          width: 400px;
+          width: 450px;
         }
       }
     </style>
   </head>
 
-  <body class="m-0 p-0 font-default box-border mx-auto custom-width w-11/12">
-    <!-- navigation -->
+  <body class="m-0 p-0 font-default box-border w-11/12 mx-auto">
     <nav class="flex justify-between items-center py-4 lg:py-7 md:py-7">
       <h1 class="font-logo text-xl md:text-3xl mb-0">By Khant</h1>
       <div class="relative w-[160px] md:w-[240px] lg:w-[300px]">
@@ -158,341 +157,39 @@
       </div>
     </nav>
 
-    <!-- hero-section -->
-    <div>
-      <div class="py-16">
-        <h1 class="text-3xl :text-6xl pb-2">
-          Build Smarter. <br />
-          Code Better.
-        </h1>
-        <p class="text-sm text-gray-700 py-3">
-          Your go-to hub for coding tips, tools, and sharing knowledge.
-        </p>
+    <div class="my-20">
+      <!-- <h2 class="text-xl flex items-center justify-center gap-1">
+        Search result for
+        <p class="text-2xl">"website dev"</p>
+      </h2> -->
+      <!-- <h2 class="text-2xl flex items-center justify-center gap-1">Front-end</h2> -->
+      <div
+        class="block md:flex md:items-center md:justify-center md:text-start text-center gap-1"
+      >
+        <h2 class="text-sm md:text-xl">
+          Search result for
+          <span class="text-base md:text-2xl">"website dev"</span>
+        </h2>
+        <h2 class="text-sm md:text-xl">
+          related to
+          <span class="text-base md:text-2xl">Front-end</span>
+        </h2>
       </div>
-      <hr class="border-t-gray-400" />
+      <p class="text-gray-800 text-center mt-2 text-sm md:text-base">
+        Here is the result that matches what you searched for.
+      </p>
     </div>
+    <hr class="mt-1 border-t-gray-400" />
 
-    <!-- recent posts section -->
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-9 py-8 container mx-auto"
-    >
-      <div class="mb-5 md:mb-0">
-        <h3 class="text-xl mb-4">Newest Post</h3>
-        <div>
-          <img
-            src="./src/img/mostly-read.jpg"
-            alt=""
-            class="object-cover w-full h-[200px] lg:h-[270px] rounded-md"
-          />
-          <h2 class="text-xl lg:text-2xl mt-3 mb-1">
-            How to become a website developer
-          </h2>
-          <div class="flex py-2 gap-1">
-            <a
-              href=""
-              class="decoration-none text-gray-900 text-[0.6rem] md:text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
-              >Frontend</a
-            >
-
-            <a
-              href=""
-              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
-              >Frameworks & Libraries</a
-            >
-            <a
-              href=""
-              class="decoration-none text-gray-900 text-[0.6rem] text-xs lg:text-sm px-2 lg:px-3 py-1 border border-gray-900 rounded-lg"
-              >Tools</a
-            >
-          </div>
-          <p class="text-xs md:text-sm text-gray-800 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iure
-            quibusdam nesciunt sit assumenda sapiente autem consequuntur placeat
-            earum et cupiditate aspernatur perferendis, amet maiores dolor
-            reiciendis.
-          </p>
-          <div class="flex items-center justify-between pt-2">
-            <p class="flex gap-1 text-sm text-gray-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                />
-              </svg>
-              2 mins read
-            </p>
-            <p class="flex gap-1 text-sm text-gray-600">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                />
-              </svg>
-              29.1.2025
-            </p>
-          </div>
-          <button
-            class="flex md:hidden lg:flex gap-1 items-center px-5 py-2 mt-3 md:mt-8 bg-crimson hover:bg-red-700 text-white duration-300 rounded-md"
-          >
-            Read
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-3"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div>
-        <h3 class="text-xl mb-4">Recent Posts</h3>
-        <div class="flex flex-col gap-6 md:gap-4">
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
-            />
-            <div>
-              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
-                How to become a website developer
-              </h2>
-              <p class="hidden lg:block text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
-                suscipit magnam?
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
-            />
-            <div>
-              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
-                How to become a website developer
-              </h2>
-              <p class="hidden lg:block text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
-                suscipit magnam?
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
-            />
-            <div>
-              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
-                How to become a website developer
-              </h2>
-              <p class="hidden lg:block text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
-                suscipit magnam?
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="" class="flex gap-3 items-center">
-            <img
-              src="./src/img/mostly-read.jpg"
-              alt=""
-              class="h-[90px] md:h-[100px] lg:h-[130px] rounded-md"
-            />
-            <div>
-              <h2 class="text-sm md:text-lg lg:text-xl mb-1">
-                How to become a website developer
-              </h2>
-              <p class="hidden lg:block text-xs text-gray-800 py-1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
-                suscipit magnam?
-              </p>
-              <div class="flex items-center justify-between pt-2">
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                    />
-                  </svg>
-                  2 mins
-                </p>
-                <p class="flex gap-1 text-sm text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-                    />
-                  </svg>
-                  29.1.2025
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr class="border-t-gray-400 mx-8" />
-    <!-- featured posts section -->
-    <div class="py-8 container mx-auto">
-      <h3 class="text-2xl mb-7">Featured Posts</h3>
+    <div class="my-8 custom-width mx-auto">
+      <h2 class="text-xl mb-4">Blogs</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="mb-3 md:mb-2">
           <a href="">
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -563,7 +260,7 @@
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -634,7 +331,7 @@
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -705,7 +402,7 @@
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -776,7 +473,7 @@
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -847,7 +544,7 @@
             <img
               src="./src/img/mostly-read.jpg"
               alt=""
-              class="object-cover w-full h-[200px] lg:h-[190px] rounded-md"
+              class="object-cover w-full h-[180px] lg:h-[210px] rounded-md"
             />
             <h2 class="text-xl lg:text-xl mt-3 mb-1">
               How to become a website developer
@@ -1077,7 +774,7 @@
           </div>
         </div>
       </div>
-      <hr class="mt-3 border-t-gray-400 mx-8" />
+      <hr class="border-t-gray-400 mx-8" />
       <p class="text-gray-600 px-6 py-4">
         2025 &copy; By-Khant. All right reserve to Khart.
       </p>
