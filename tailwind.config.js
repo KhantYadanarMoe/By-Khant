@@ -16,6 +16,7 @@ module.exports = {
         lightGray: "#F5F5F5", // Background color
         charcoal: "#333333", // Text color
         softSlate: "#A9A9A9", // Border color
+        danger: "#DC3545", // Red color for dangers
       },
     },
   },
